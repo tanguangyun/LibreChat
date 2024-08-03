@@ -39,7 +39,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.YOUR_GITHUB_TOKEN }}
 
       # Login to Docker Hub
       - name: Login to Docker Hub
