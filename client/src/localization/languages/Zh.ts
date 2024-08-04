@@ -11,7 +11,6 @@ export default {
   com_sidepanel_hide_panel: '隐藏侧边栏',
   com_sidepanel_attach_files: '附加文件',
   com_sidepanel_manage_files: '管理文件',
-  com_sidepanel_conversation_tags: '书签',
   com_assistants_capabilities: '功能',
   com_assistants_knowledge: '知识',
   com_assistants_knowledge_info: '如果您在“知识”中上传文件，与助手的对话可能包括文件内容。',
@@ -160,26 +159,12 @@ export default {
   com_ui_upload_delay: '上传 "{0}" 时比预期花了更长时间。 文件正在进行检索索引，请稍候。',
   com_ui_privacy_policy: '隐私政策',
   com_ui_terms_of_service: '服务政策',
-  com_ui_bookmarks: '书签',
-  com_ui_bookmarks_rebuild: '重建',
-  com_ui_bookmarks_new: '新书签',
-  com_ui_bookmark_delete_confirm: '你确定要删除这个书签吗？',
-  com_ui_bookmarks_title: '标题',
-  com_ui_bookmarks_count: '计数',
-  com_ui_bookmarks_description: '描述',
-  com_ui_bookmarks_create_success: '书签创建成功',
-  com_ui_bookmarks_update_success: '书签更新成功',
-  com_ui_bookmarks_delete_success: '书签删除成功',
-  com_ui_bookmarks_create_error: '创建书签时出错',
-  com_ui_bookmarks_update_error: '更新书签时出错',
-  com_ui_bookmarks_delete_error: '删除书签时出错',
-  com_ui_bookmarks_add_to_conversation: '添加到当前对话',
   com_auth_error_login: '无法登录，请确认提供的账户密码正确，并重新尝试。',
   com_auth_error_login_rl: '尝试登录次数过多，请稍后再试。',
   com_auth_error_login_ban: '根据我们的服务规则，您的帐号被暂时禁用。',
   com_auth_error_login_server: '内部服务器错误，请稍后再试。',
-  com_auth_no_account: '新用户注册',
-  com_auth_sign_up: '注册',
+  com_auth_no_account: 'Don\'t have an account?',
+  com_auth_sign_up: 'Sign up',
   com_auth_sign_in: '登录',
   com_auth_google_login: '使用 Google 登录',
   com_auth_facebook_login: '使用 Facebook 登录',
@@ -190,15 +175,15 @@ export default {
   com_auth_email_min_length: '邮箱地址至少6个字符',
   com_auth_email_max_length: '邮箱地址最多120个字符',
   com_auth_email_pattern: '请输入正确的电子邮箱格式',
-  com_auth_email_address: '电子邮箱地址',
-  com_auth_password: '密码',
+  com_auth_email_address: 'Email address',
+  com_auth_password: 'Password',
   com_auth_password_required: '密码为必填项',
   com_auth_password_min_length: '密码至少8个字符',
   com_auth_password_max_length: '密码最多128个字符',
   com_auth_password_forgot: '忘记密码?',
   com_auth_password_confirm: '确认密码',
   com_auth_password_not_match: '密码不一致',
-  com_auth_continue: '继续',
+  com_auth_continue: '登录',
   com_auth_create_account: '创建账号',
   com_auth_error_create: '注册账户过程中出现错误，请重试。',
   com_auth_full_name: '姓名',
@@ -224,7 +209,7 @@ export default {
   com_auth_click_here: '点击这里',
   com_auth_to_try_again: '再试一次。',
   com_auth_submit_registration: '注册提交',
-  com_auth_welcome_back: '欢迎',
+  com_auth_welcome_back: 'Welcome back',
   com_auth_back_to_login: '返回登录',
   com_endpoint_open_menu: '打开菜单',
   com_endpoint_bing_enable_sydney: '启用 Sydney',
@@ -446,8 +431,6 @@ export default {
   com_nav_help_faq: '帮助',
   com_nav_settings: '设置',
   com_nav_search_placeholder: '搜索对话及对话内容',
-  com_nav_info_bookmarks_rebuild:
-    '如果书签计数不正确，请重新构建书签信息。书签计数将被重新计算，数据将恢复到其正确状态。',
   com_nav_setting_general: '通用',
   com_nav_setting_beta: '实验特性',
   com_nav_setting_data: '数据管理',
@@ -588,10 +571,6 @@ export const comparisons = {
   com_sidepanel_manage_files: {
     english: 'Manage Files',
     translated: '管理文件',
-  },
-  com_sidepanel_conversation_tags: {
-    english: 'Bookmarks',
-    translated: '书签',
   },
   com_assistants_capabilities: {
     english: 'Capabilities',
@@ -1190,62 +1169,6 @@ export const comparisons = {
     english: 'Terms of service',
     translated: '服务政策',
   },
-  com_ui_bookmarks: {
-    english: 'Bookmarks',
-    translated: '书签',
-  },
-  com_ui_bookmarks_rebuild: {
-    english: 'Rebuild',
-    translated: '重建',
-  },
-  com_ui_bookmarks_new: {
-    english: 'New Bookmark',
-    translated: '新书签',
-  },
-  com_ui_bookmark_delete_confirm: {
-    english: 'Are you sure you want to delete this bookmark?',
-    translated: '你确定要删除这个书签吗？',
-  },
-  com_ui_bookmarks_title: {
-    english: 'Title',
-    translated: '标题',
-  },
-  com_ui_bookmarks_count: {
-    english: 'Count',
-    translated: '计数',
-  },
-  com_ui_bookmarks_description: {
-    english: 'Description',
-    translated: '描述',
-  },
-  com_ui_bookmarks_create_success: {
-    english: 'Bookmark created successfully',
-    translated: '书签创建成功',
-  },
-  com_ui_bookmarks_update_success: {
-    english: 'Bookmark updated successfully',
-    translated: '书签更新成功',
-  },
-  com_ui_bookmarks_delete_success: {
-    english: 'Bookmark deleted successfully',
-    translated: '书签删除成功',
-  },
-  com_ui_bookmarks_create_error: {
-    english: 'There was an error creating the bookmark',
-    translated: '创建书签时出错',
-  },
-  com_ui_bookmarks_update_error: {
-    english: 'There was an error updating the bookmark',
-    translated: '更新书签时出错',
-  },
-  com_ui_bookmarks_delete_error: {
-    english: 'There was an error deleting the bookmark',
-    translated: '删除书签时出错',
-  },
-  com_ui_bookmarks_add_to_conversation: {
-    english: 'Add to current conversation',
-    translated: '添加到当前对话',
-  },
   com_auth_error_login: {
     english:
       'Unable to login with the information provided. Please check your credentials and try again.',
@@ -1265,11 +1188,11 @@ export const comparisons = {
   },
   com_auth_no_account: {
     english: 'Don\'t have an account?',
-    translated: '新用户注册',
+    translated: 'Don\'t have an account?',
   },
   com_auth_sign_up: {
     english: 'Sign up',
-    translated: '注册',
+    translated: 'Sign up',
   },
   com_auth_sign_in: {
     english: 'Sign in',
@@ -1313,11 +1236,11 @@ export const comparisons = {
   },
   com_auth_email_address: {
     english: 'Email address',
-    translated: '电子邮箱地址',
+    translated: 'Email address',
   },
   com_auth_password: {
     english: 'Password',
-    translated: '密码',
+    translated: 'Password',
   },
   com_auth_password_required: {
     english: 'Password is required',
@@ -1345,7 +1268,7 @@ export const comparisons = {
   },
   com_auth_continue: {
     english: 'Continue',
-    translated: '继续',
+    translated: '登录',
   },
   com_auth_create_account: {
     english: 'Create your account',
@@ -1450,7 +1373,7 @@ export const comparisons = {
   },
   com_auth_welcome_back: {
     english: 'Welcome back',
-    translated: '欢迎',
+    translated: 'Welcome back',
   },
   com_auth_back_to_login: {
     english: 'Back to Login',
@@ -2285,12 +2208,6 @@ export const comparisons = {
   com_nav_search_placeholder: {
     english: 'Search messages',
     translated: '搜索对话及对话内容',
-  },
-  com_nav_info_bookmarks_rebuild: {
-    english:
-      'If the bookmark count is incorrect, please rebuild the bookmark information. The bookmark count will be recalculated and the data will be restored to its correct state.',
-    translated:
-      '如果书签计数不正确，请重新构建书签信息。书签计数将被重新计算，数据将恢复到其正确状态。',
   },
   com_nav_setting_general: {
     english: 'General',
